@@ -38,7 +38,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
    
 
     Route::controller(AdminController::class)->group(function(){
-        Route::get('dashboard','index')->name('admin.dashboard');
+        Route::get('admindashboard','index')->name('admin.dashboard');
 
 
     });

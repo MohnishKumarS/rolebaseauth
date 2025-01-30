@@ -68,6 +68,6 @@ class RegisteredUserController extends Controller
         }
         
 
-        return redirect()->route('dashboard')->with('success', 'Registration successful!');
+        return redirect('dashboard')->with('success', 'Registration successful!');
     }
 }

@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white {{Request::is('dashboard') ? 'active' : ''}}" href="{{route('admin.dashboard')}}">
+          <a class="nav-link text-white {{Request::is('admindashboard') ? 'active' : ''}}" href="{{route('admin.dashboard')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
