@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ html{
+    scroll-behavior: smooth;
+    height: 100%;
+} 
+body{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 15px !important;
+    font-family: "Roboto Slab", serif !important;
+} 
+
+a{
+    text-decoration: none !important;
+}
+
+section {
+    padding-bottom: 100px;
+}
+
+
+.text-main {
+    color: #FF4742;
+}
+
+label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 1px;
+   }
+
+.sec-title {
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 600;
+    letter-spacing: 1px;
+    color: #FF4742;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sec-title::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 80px;
+    background-color: #FF4742;
+    border-radius: 40px;
+}
+.sub-head{
+    font-size: 30px !important;
+    text-transform: capitalize;
+    color: rgb(58, 58, 58) !important;
+    font-weight: 400 !important;
+}
+.sub-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgb(220, 53, 69);
+    font-size: 30px;
+
+}
+
+.sub-desc{
+    letter-spacing: 1px;
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+}
+
+/* btn */
+.btn-main {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn-main:hover,
+.btn-main:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.btn-main i {
+    width: 1.6em;
+    margin-right: 7px;
+    transform: translateX(0px);
+    transition: all 0.6s ease;
+}
+
+.btn-main:hover i {
+    transform: translateX(5px);
+}
+
+.btn-main:active {
+  opacity: .5;
+}
+
+/* bootstrap */
+.form-control:focus,.form-select:focus{
+    border-color: #ff4742 !important;
+    box-shadow:inset 0 0 0 0.2rem #ff484241 !important;
+}
+.form-control::placeholder{
+   font-size: 12px !important;
+   /* color: rgb(168, 168, 168) !important; */
+   letter-spacing: 1px;
+}
+select{
+    font-size: 15px !important;
+}
+select option{
+    font-size: 15px !important;
+    color: rgb(145, 145, 145) !important;
+}
+input{
+    font-size: 15px !important;
+}
+
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #fc8783; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #f0f0f0; /* Space around the thumb */
+}
+
+/* Style the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FF4742; 
+    cursor: pointer;
+}

@@ -62,6 +62,10 @@ class RegisteredUserController extends Controller
                 'token' => $user->createToken('API Token')->plainTextToken
             ], 201);
         }
+
+        if ($user->role === 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
         
 
         return redirect()->route('dashboard')->with('success', 'Registration successful!');

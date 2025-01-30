@@ -53,6 +53,10 @@ class AuthenticatedSessionController extends Controller
             ], 200);
         }
         $request->session()->regenerate();
+
+        if ($user->role === 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
